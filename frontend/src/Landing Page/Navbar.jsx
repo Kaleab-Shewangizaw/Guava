@@ -17,10 +17,10 @@ const Navbar = () => {
 
   return (
     <motion.div
-      className="flex items-center h-[56px] sticky top-5 mr-auto ml-auto w-[70%] px-5 rounded-2xl bg-[rgba(195,195,195,0.37)] "
+      className="flex items-center h-[56px] sticky top-5 mr-auto ml-auto w-[70%] px-5 rounded-2xl backdrop-blur-md bg-[rgba(195,195,195,0.67)] "
       initial={{ y: -200 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, type: "spring", stiffness: 100 }}
+      transition={{ duration: 1, type: "spring", stiffness: 100, delay: 0.7 }}
     >
       <motion.div
         className="flex items-center gap-0  mr-[16%]  cursor-pointer"
@@ -56,7 +56,7 @@ const Navbar = () => {
         Sign In
       </motion.button>
       <motion.button
-        className="bg-[#257B36] text-white px-4 py-1 rounded-[8px] ml-1 text-md"
+        className="bg-[#257B36] text-white px-4 py-1 rounded-[8px] ml-1 text-md border-1 border-[#257B36]"
         variants={hoverAnimation}
         whileHover="hover"
       >
