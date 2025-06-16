@@ -1,13 +1,10 @@
 import React from "react";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react";
+import MainLandingPage from "./Landing Page/MainLandingPage";
 
 const App = () => {
-  return (
-    <div>
-      <h1 className="bg-deepblue text-shadow-blue-200 text-5xl p-4 text-center">
-        Welcome to the App
-      </h1>
-    </div>
-  );
+  return <MainLandingPage />;
 };
 
 export default App;
