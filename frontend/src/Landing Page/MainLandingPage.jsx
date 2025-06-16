@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import FeaturesSection from "./FeaturesSection";
+import TestimonialSection from "./TestimonialSection";
+import Footer from "./Footer";
 
 const MainLandingPage = () => {
   return (
@@ -10,6 +12,8 @@ const MainLandingPage = () => {
         <Navbar />
         <HeroSection />
         <FeaturesSection />
+        <TestimonialSection />
+        <Footer />
       </div>
     </>
   );

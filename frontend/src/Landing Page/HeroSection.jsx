@@ -1,5 +1,6 @@
 import React from "react";
 import ShowCase1 from "../assets/images/Desktop - 10.png";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
 
 const HeroSection = () => {

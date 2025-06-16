@@ -56,7 +56,7 @@ const Navbar = () => {
         Sign In
       </motion.button>
       <motion.button
-        className="bg-[#257B36] text-white px-4 py-1 rounded-[8px] ml-1 text-md border-1 border-[#257B36]"
+        className="bg-[#257B36] text-white px-4 py-1 rounded-[8px] ml-1 text-md border-1 border-[#257B36] cursor-pointer"
         variants={hoverAnimation}
         whileHover="hover"
       >
