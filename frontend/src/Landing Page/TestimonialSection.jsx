@@ -11,17 +11,16 @@ const TestimonialSection = () => {
           Testimonials
         </h1>
       </div>
-      <div className="w-full bg-gradient-to-r from-white to-[#CBE1EB] py-10 overflow-hidden">
+      <div className="w-full py-10 overflow-hidden">
         <motion.div
           className="flex gap-5 w-max"
           animate={{ x: ["0%", "-100%"] }}
           transition={{
-            duration: 500, // slow scroll (you can adjust this)
+            duration: 500,
             ease: "linear",
             repeat: Infinity,
           }}
         >
-          {/* Repeat the testimonials ten times for seamless looping */}
           {[...Array(10)].flatMap((_, index) => [
             <Testimony
               key={`selam-${index}`}
