@@ -2,8 +2,10 @@ import React from "react";
 import Logo from "../assets/guava-icon.svg";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
+import { useNavigate } from "react-router-dom";
 
 const Footer = ({ dark }) => {
+  const navigate = useNavigate();
   const hoverAnimation = {
     rest: { scale: 1 },
     hover: {
@@ -74,6 +76,7 @@ const Footer = ({ dark }) => {
           initial="rest"
           whileHover="hover"
           animate="rest"
+          onClick={() => navigate("/signup")}
         >
           Get Started!
         </motion.button>

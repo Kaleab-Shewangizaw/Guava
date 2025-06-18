@@ -2,8 +2,10 @@ import React from "react";
 import Logo from "../assets/guava-icon.svg";
 // eslint-disable-next-line no-unused-vars
 import { easeIn, hover, motion, spring } from "motion/react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = ({ dark }) => {
+  const navigate = useNavigate();
   const hoverAnimation = {
     hover: {
       scale: 1.1,
@@ -69,6 +71,7 @@ const Navbar = ({ dark }) => {
         }`}
         variants={hoverAnimation}
         whileHover="hover"
+        onClick={() => navigate("/login")}
       >
         Sign In
       </motion.button>
@@ -81,6 +84,7 @@ const Navbar = ({ dark }) => {
         }`}
         variants={hoverAnimation}
         whileHover="hover"
+        onClick={() => navigate("/signup")}
       >
         Get Started!
       </motion.button>

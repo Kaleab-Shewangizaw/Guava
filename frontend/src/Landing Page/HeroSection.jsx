@@ -3,8 +3,10 @@ import ShowCase1 from "../assets/images/Desktop - 10.png";
 import ShowCase2 from "../assets/images/Desktop - 7.png";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = ({ dark }) => {
+  const navigate = useNavigate();
   const buttonAnimation = {
     hidden: {
       opacity: 0,
@@ -73,6 +75,7 @@ const HeroSection = ({ dark }) => {
 
       <div className="flex items-center  justify-center w-full my-15 gap-10">
         <motion.button
+          onClick={() => navigate("/signup")}
           className={` text-white px-4 py-1 rounded-[8px]  text-2xl font-light border cursor-pointer ${
             dark
               ? " bg-[#34B94E] border-[#34B94E]"
