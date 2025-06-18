@@ -3,7 +3,7 @@ import Logo from "../assets/guava-icon.svg";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
 
-const Footer = () => {
+const Footer = ({ dark }) => {
   const hoverAnimation = {
     rest: { scale: 1 },
     hover: {
@@ -18,7 +18,11 @@ const Footer = () => {
   };
 
   return (
-    <div className="w-full py-2 bg-[rgba(5,102,24,0.29)] mt-10">
+    <div
+      className={`w-full py-2  mt-10 ${
+        dark ? "bg-[#1771294a]" : "bg-[rgba(5,102,24,0.29)]"
+      }`}
+    >
       <div className="w-[70%] mx-auto flex justify-between items-center">
         <motion.img
           src={Logo}
@@ -27,9 +31,10 @@ const Footer = () => {
           className="w-[50px] h-[50px] mr-0 p-0 cursor-pointer"
         />
 
-        <div className="flex gap-4 text-[#016114]">
+        <div className={`flex gap-4 `}>
           <motion.a
             href="#"
+            className={`${dark ? "text-[#E4E1E1]" : "text-[#016114]"}`}
             variants={hoverAnimation}
             initial="rest"
             whileHover="hover"
@@ -39,6 +44,7 @@ const Footer = () => {
           </motion.a>
           <motion.a
             href="#"
+            className={`${dark ? "text-[#E4E1E1]" : "text-[#016114]"}`}
             variants={hoverAnimation}
             initial="rest"
             whileHover="hover"
@@ -48,6 +54,7 @@ const Footer = () => {
           </motion.a>
           <motion.a
             href="#"
+            className={`${dark ? "text-[#E4E1E1]" : "text-[#016114]"}`}
             variants={hoverAnimation}
             initial="rest"
             whileHover="hover"
@@ -58,7 +65,11 @@ const Footer = () => {
         </div>
 
         <motion.button
-          className="bg-[#257B36] text-white px-4 py-1 rounded-[8px] ml-1 text-md border-1 border-[#257B36] cursor-pointer"
+          className={` text-white px-4 py-1 rounded-[8px] ml-1 text-md border-1  cursor-pointer ${
+            dark
+              ? " bg-[#34B94E] border-[#34B94E]"
+              : "bg-[#257B36] border-[#257B36]"
+          }`}
           variants={hoverAnimation}
           initial="rest"
           whileHover="hover"

@@ -3,11 +3,15 @@ import Testimony from "./Testimony";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
-const TestimonialSection = () => {
+const TestimonialSection = ({ dark }) => {
   return (
     <>
       <div className="mx-auto w-[70%] flex flex-col items-center mt-30">
-        <h1 className="w-full  text-3xl font-bold mb-6 text-left">
+        <h1
+          className={`w-full  text-3xl font-bold mb-6 text-left ${
+            dark ? "text-gray-200" : ""
+          }`}
+        >
           Testimonials
         </h1>
       </div>

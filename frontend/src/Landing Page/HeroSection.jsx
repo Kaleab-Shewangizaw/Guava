@@ -73,7 +73,7 @@ const HeroSection = ({ dark }) => {
 
       <div className="flex items-center  justify-center w-full my-15 gap-10">
         <motion.button
-          className={` text-white px-4 py-1 rounded-[8px]  text-2xl font-light border ${
+          className={` text-white px-4 py-1 rounded-[8px]  text-2xl font-light border cursor-pointer ${
             dark
               ? " bg-[#34B94E] border-[#34B94E]"
               : "bg-[#257B36] border-[#257B36]"
