@@ -50,7 +50,7 @@ const SignUp = () => {
             darkMode ? "text-white" : "text-[#000000]"
           }`}
         >
-          Welcome
+          Welcome!
         </h1>
         <form className="" action="">
           <div className="flex flex-col gap-4 w-full relative">
